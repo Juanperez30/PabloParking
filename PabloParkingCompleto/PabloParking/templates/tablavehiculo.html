@@ -1,0 +1,43 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>{% extends 'layout2.html' %}
+  </head>
+  <body>
+    {% block cuerpo %}
+    <table class="table">
+      <thead>
+
+        <tr>
+          <th scope="col">Hora Entrada</th>
+          <th scope="col">Placa</th>
+          <th scope="col">Color</th>
+          <th scope="col">Modelo</th>
+          <th scope="col">Id Tipo vehiculo</th>
+          <th scope="col">Puesto Asignado</th>
+          <th scope="col">Casillero Asignado</th>
+          <th scope="col">Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%for veh in vehiculo %}
+        <tr>
+          <td>{{ veh.0 }}</td>
+          <td>{{ veh.2 }}</td>
+          <td>{{ veh.3 }}</td>
+          <td>{{ veh.4 }}</td>
+          <td>{{ veh.5 }}</td>
+          <td>{{ veh.6 }}</td>
+          <td>{{ veh.7 }}</td>
+          <td>{{ veh.8 }}</td>
+        </tr>
+        <tr>
+        {%endfor%}
+
+        </tr>
+      </tbody>
+    </table>
+    {% endblock %}
+  </body>
+</html>

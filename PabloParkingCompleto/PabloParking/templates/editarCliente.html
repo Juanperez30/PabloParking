@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block cuerpo %}
+
+
+<form action = "/editar/{{ cliente.0 }}" method = "POST">
+  <div class="form-group">
+    <label for="formGroupExampleInput">Cedula</label>
+    <input value = "{{cliente.0}}" name = "cedu" type = "text" class = "form-control" id = "formGroupExampleInput2" placeholder="Another input placeholder">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Nombre</label>
+    <input value="{{ cliente.1 }}" name = "nomb" type = "text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Apellidos</label>
+    <input value="{{ cliente.2 }}" name = "apell" type = "text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+</div>
+<button type
+
+</form>
+
+{% endblock % }
